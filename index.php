@@ -1,26 +1,7 @@
 <?php
 
-require 'database/QueryBuilder.php';
-
-
-$db = new QueryBuilder;
-
-//$tasks = $db->getAllTasks();
-
 $tasks = $db->all("tasks");
 
-// Auth
-    // register()
-    // login()
-    // logout()
-    // currentUser()
-    // check()
-    // ...
-
-// ImageManager
-    // upload($image) //
-    // delete($path)
-    // ...
 
 
 

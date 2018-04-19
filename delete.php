@@ -10,3 +10,4 @@ $id = $_GET['id'];
 $db->delete("tasks", $id);
 
 header('Location: /');
+
