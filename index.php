@@ -1,9 +1,17 @@
 <?php
 
 $tasks = $db->all("tasks");
+// User
+    // register
+    // login
+    // ban
+    // unban
+
+    //Localization
+        //setLanguage('ru-RU') //
 
 
-
+        // привет hi
 
 ?>
 <!doctype html>

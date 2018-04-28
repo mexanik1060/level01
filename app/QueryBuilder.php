@@ -1,4 +1,9 @@
 <?php
+namespace App;
+
+// для создания запросов для базы данных mysql!
+
+use PDO;
 
 class QueryBuilder
 {
@@ -20,7 +25,7 @@ class QueryBuilder
         return $results;
     }
 
-    // Вывод одной задачи
+    // Вывод одной задачи ($названиеТаблицы, $айдишник)
     function getOne($table, $id)
     {
         $sql = "SELECT * FROM $table WHERE id=:id";
