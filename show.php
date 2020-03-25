@@ -1,12 +1,9 @@
 <?php
-require 'database/QueryBuilder.php';
-
-$db = new QueryBuilder;
-
-$id = $_GET['id'];
-
-//$task = $db->getTask($id);
-$task = $db->getOne("tasks", $id);
+$sql = "SELECT * FROM $table WHERE id=:id";
+$statement = $this->pdo->prepare($sql);
+$statement->bindParam(":id", $id);
+$statement->execute();
+$result = $statement->fetch(PDO::FETCH_ASSOC);
 
 ?>
 
